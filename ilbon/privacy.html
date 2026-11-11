@@ -36,7 +36,7 @@
     <li>학습 기록은 기기 안에만 저장되고, 개발자 서버로 보내지 않습니다. 개발자는 별도 서버를 운영하지 않습니다.</li>
     <li>결제는 Google Play가 처리하며, 앱은 카드 번호 같은 결제 수단 정보를 볼 수 없습니다.</li>
     <li>쉐도잉 발음 확인을 켜면 마이크 음성을 음성 인식으로 글자로 바꿔 점수를 매깁니다. 녹음 파일은 만들거나 저장하지 않습니다.</li>
-    <li>앱 개선을 위한 익명 사용 통계(Google Firebase Analytics)와, 팩을 사지 않은 이용자에게 보여 주는 광고(Unity LevelPlay)가 기기 정보와 광고 ID를 처리합니다.</li>
+    <li>앱 개선을 위한 익명 사용 통계(Google Firebase Analytics)와, 팩을 사지 않은 이용자에게 보여 주는 광고(Unity Ads)가 기기 정보와 광고 ID를 처리합니다.</li>
   </ul>
 </div>
 
@@ -48,7 +48,7 @@
     <tr><td>구매 정보</td><td>구매한 상품 ID, 구매 토큰, 구매 서명</td><td>구매한 팩 해금, 구매 복원·환불 반영</td><td>이용자 기기 안(암호화 저장). 결제 자체는 Google Play가 처리</td></tr>
     <tr><td>음성(선택)</td><td>쉐도잉에서 따라 말한 음성, 그 인식 결과 문장</td><td>발음 확인 점수 제공</td><td>저장하지 않음. 기기의 음성 인식 서비스가 처리하며, 기기 안 인식을 쓸 수 없는 기기에서는 Google 음성 인식 서버로 전송되어 처리됨. 인식 결과 문장은 점수 계산 뒤 버림</td></tr>
     <tr><td>사용 통계</td><td>앱 실행, 화면·기능 사용 이벤트(예: 퀴즈 완료, 에피소드 시청), 기기 모델·OS·언어·대략적 국가, 앱 인스턴스 ID, 광고 ID</td><td>기능 사용 현황 파악, 오류 개선</td><td>Google(Firebase Analytics)</td></tr>
-    <tr><td>광고</td><td>광고 ID, 기기 정보, IP 주소, 광고 노출·클릭 기록</td><td>광고 표시, 노출 빈도 제한, 부정 클릭 방지</td><td>Unity Technologies(LevelPlay)</td></tr>
+    <tr><td>광고</td><td>광고 ID, 기기 정보, IP 주소, 광고 노출·클릭 기록</td><td>광고 표시, 노출 빈도 제한, 부정 클릭 방지</td><td>Unity Technologies(Unity Ads)</td></tr>
   </tbody>
 </table></div>
 <p>팩을 하나라도 구매하면 광고가 제거되며, 이때 광고 SDK는 초기화되지 않습니다.</p>
@@ -61,7 +61,7 @@
   <thead><tr><th>받는 자</th><th>이전 국가</th><th>항목</th><th>시기·방법</th><th>보유 기간</th></tr></thead>
   <tbody>
     <tr><td>Google LLC (Firebase Analytics, Google Play 결제)</td><td>미국 등 Google 데이터센터 소재국</td><td>1항의 사용 통계·구매 정보, 음성(기기 안 인식을 쓸 수 없는 기기에서 쉐도잉 발음 확인을 켠 경우)</td><td>앱 사용 시 네트워크로 전송</td><td>Google 정책에 따름</td></tr>
-    <tr><td>Unity Technologies (LevelPlay 광고)</td><td>미국 등 Unity 데이터센터 소재국</td><td>1항의 광고 항목</td><td>광고 요청 시 네트워크로 전송</td><td>Unity 정책에 따름</td></tr>
+    <tr><td>Unity Technologies (Unity Ads 광고)</td><td>미국 등 Unity 데이터센터 소재국</td><td>1항의 광고 항목</td><td>광고 요청 시 네트워크로 전송</td><td>Unity 정책에 따름</td></tr>
   </tbody>
 </table></div>
 <p>각 사업자의 개인정보 처리는 해당 사업자의 방침을 따릅니다:
